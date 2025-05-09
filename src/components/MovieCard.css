@@ -42,3 +42,17 @@
   color: black;
   font-size: 12px;
 }
+
+@media (max-width: 600px) {
+  .MovieCard {
+    width: 200px;
+  }
+
+  .movie-details {
+    height: 180px;
+  }
+
+  .movie-poster {
+    height: 300px;
+  }
+}

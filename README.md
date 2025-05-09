@@ -2,85 +2,85 @@
 
 Submitted by: **Michelle**
 
-Estimated time spent: **#** hours spent in total
+Estimated time spent: **8** hours spent in total
 
-Deployed Application (**required**): [Flixster Deployed Site](ADD_LINK_HERE)
+Deployed Application (**required**): [Flixster Deployed Site](https://flixter-8k48.onrender.com/)
 
 ### Application Features
 
 #### REQUIRED FEATURES
 
-- [ ] **Display Movies**
-  - [ ] Users can view a list of current movies from The Movie Database API in a
+- [x] **Display Movies**
+  - [x] Users can view a list of current movies from The Movie Database API in a
         grid view.
-    - [ ] Movie tiles should be reasonably sized (at least 6 playlists on your
+    - [x] Movie tiles should be reasonably sized (at least 6 playlists on your
           laptop when full screen; large enough that the playlist components
           detailed in the next feature are legible).
-  - [ ] For each movie displayed, users can see the movie's:
-    - [ ] Title
-    - [ ] Poster image
-    - [ ] Votes
-  - [ ] Users can load more current movies by clicking a button at the bottom of
+  - [x] For each movie displayed, users can see the movie's:
+    - [x] Title
+    - [x] Poster image
+    - [x] Votes
+  - [x] Users can load more current movies by clicking a button at the bottom of
         the list, which automatically updates page with new movies (no reloading
         by clicking the browser's refresh button).
-- [ ] **Search Functionality**
-  - [ ] Users can use a search bar to search for movies by title.
-  - [ ] The search bar should include:
-    - [ ] Text input field
-    - [ ] Submit/Search button
-    - [ ] Clear button
-  - [ ] Movies with a title containing the search query in the text input field
+- [x] **Search Functionality**
+  - [x] Users can use a search bar to search for movies by title.
+  - [x] The search bar should include:
+    - [x] Text input field
+    - [x] Submit/Search button
+    - [x] Clear button
+  - [x] Movies with a title containing the search query in the text input field
         are displayed in a grid view when the user either:
-    - [ ] Presses the Enter key
-    - [ ] Clicks the Submit/Search button
-  - [ ] Users can click the Clear button. When clicked:
-    - [ ] Most recent search results are cleared from the text input field and
+    - [x] Presses the Enter key
+    - [x] Clicks the Submit/Search button
+  - [x] Users can click the Clear button. When clicked:
+    - [x] Most recent search results are cleared from the text input field and
           the grid view and all current movies are displayed in a grid view
 - [ ] **Design Features**
-  - [ ] Website implements all of the following accessibility features:
-    - [ ] Semantic HTML
-    - [ ] [Color contrast](https://webaim.org/resources/contrastchecker/)
-    - [ ] Alt text for images
-  - [ ] Website implements responsive web design.
-    - [ ] Uses CSS Flexbox or CSS Grid
+  - [x] Website implements all of the following accessibility features:
+    - [x] Semantic HTML
+    - [x] [Color contrast](https://webaim.org/resources/contrastchecker/)
+    - [x] Alt text for images
+  - [x] Website implements responsive web design.
+    - [x] Uses CSS Flexbox or CSS Grid
     - [ ] Movie tiles and images shrink/grow in response to window size
-  - [ ] Users can click on a movie tile to view more details about a movie in a
+  - [x] Users can click on a movie tile to view more details about a movie in a
         pop-up modal.
-    - [ ] The pop-up window is centered in the screen and does not occupy the
+    - [x] The pop-up window is centered in the screen and does not occupy the
           entire screen.
-    - [ ] The pop-up window has a shadow to show that it is a pop-up and appears
+    - [x] The pop-up window has a shadow to show that it is a pop-up and appears
           floating on the screen.
-    - [ ] The backdrop of the pop-up appears darker or in a different shade than
+    - [x] The backdrop of the pop-up appears darker or in a different shade than
           before. including:
-    - [ ] The pop-up displays additional details about the moving including:
-      - [ ] Runtime in minutes
-      - [ ] Backdrop poster
-      - [ ] Release date
-      - [ ] Genres
-      - [ ] An overview
-  - [ ] Users can use a drop-down menu to sort movies.
-    - [ ] Drop-down allows movies to be sorted by:
-      - [ ] Title (alphabetic, A-Z)
-      - [ ] Release date (chronologically, most recent to oldest)
-      - [ ] Rating (descending, highest to lowest)
-    - [ ] When a sort option is clicked, movies display in a grid according to
+    - [x] The pop-up displays additional details about the moving including:
+      - [x] Runtime in minutes
+      - [x] Backdrop poster
+      - [x] Release date
+      - [x] Genres
+      - [x] An overview
+  - [x] Users can use a drop-down menu to sort movies.
+    - [x] Drop-down allows movies to be sorted by:
+      - [x] Title (alphabetic, A-Z)
+      - [x] Release date (chronologically, most recent to oldest)
+      - [x] Rating (descending, highest to lowest)
+    - [x] When a sort option is clicked, movies display in a grid according to
           selected criterion.
   - [ ] Website displays:
-    - [ ] Header section
+    - [x] Header section
     - [ ] Banner section
-    - [ ] Search bar
-    - [ ] Movie grid
+    - [x] Search bar
+    - [x] Movie grid
     - [ ] About section
     - [ ] Contact section
-    - [ ] Footer section
+    - [x] Footer section
     - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: To ease the grading
           process, please use the
           [color contrast checker](https://webaim.org/resources/contrastchecker/)
           to demonstrate to the grading team that text and background colors on
           your website have appropriate contrast. The Contrast Ratio should be
           above 4.5:1 and should have a green box surrounding it.
-  - [ ] **Deployment**
-  - [ ] Website is deployed via Render.
+  - [x] **Deployment**
+  - [x] Website is deployed via Render.
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: For ease of grading, please
         use the deployed version of your website when creating your walkthrough.
 

@@ -1,10 +1,10 @@
-import React, { useMemo } from 'react'
+import React, { useMemo } from "react";
 
-import { getPosterUrl } from '../data/tmdbClient'
+import { getPosterUrl } from "../data/tmdbClient";
 
-import './MovieCard.css'
+import "./MovieCard.css";
 
-const MAX_TITLE_LENGTH = 43
+const MAX_TITLE_LENGTH = 43;
 
 export default function MovieCard({
   id,
@@ -26,23 +26,23 @@ export default function MovieCard({
       movieBackdropUrl: backdrop || poster,
       movieRating: rating,
       movieReleaseDate: releaseDate,
-    })
+    });
 
   const posterUrl = useMemo(() => {
     if (poster) {
-      return getPosterUrl(poster)
+      return getPosterUrl(poster);
     } else {
-      return "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+      return "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg";
     }
-  }, [poster])
+  }, [poster]);
 
   const truncatedTitle = useMemo(() => {
     if (title.length > MAX_TITLE_LENGTH) {
-      return title.substring(0, MAX_TITLE_LENGTH) + "..."
+      return title.substring(0, MAX_TITLE_LENGTH) + "...";
     } else {
-      return title
+      return title;
     }
-  }, [title])
+  }, [title]);
 
   return (
     <div className="MovieCard" onClick={handleClickMovie}>
@@ -52,5 +52,5 @@ export default function MovieCard({
         <span className="movie-rating">Rating: {rating}</span>
       </div>
     </div>
-  )
+  );
 }

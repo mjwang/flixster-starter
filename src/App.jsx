@@ -1,20 +1,20 @@
-import React, { useCallback } from 'react'
+import React, { useCallback } from "react";
 
-import MovieDetailsModal from './components/MovieDetailsModal'
-import MovieList from './components/MovieList'
-import Search from './components/Search'
-import useModal from './hooks/useModal'
-import useMovieData from './hooks/useMovieData'
+import MovieDetailsModal from "./components/MovieDetailsModal";
+import MovieList from "./components/MovieList";
+import Search from "./components/Search";
+import useModal from "./hooks/useModal";
+import useMovieData from "./hooks/useMovieData";
 
-import './App.css'
+import "./App.css";
 
 const App = () => {
   const { movies, loadMoreMovies, setSearch, isSearchMode, isAllLoaded } =
-    useMovieData()
-  const { isModalVisible, modalProps, closeModal, showModal } = useModal()
+    useMovieData();
+  const { isModalVisible, modalProps, closeModal, showModal } = useModal();
 
-  const updateSearchQuery = useCallback((string) => setSearch(string), [])
-  const clearSearchQuery = useCallback(() => setSearch(null), [])
+  const updateSearchQuery = useCallback((string) => setSearch(string), []);
+  const clearSearchQuery = useCallback(() => setSearch(null), []);
 
   return (
     <div className="App">
@@ -22,13 +22,9 @@ const App = () => {
         <h1>🍿 Flixter</h1>
       </header>
       <nav className="App-nav">
-        {isSearchMode ? (
-            <h2>Search Results...</h2>
-          ) : (
-            <h2>Now Playing</h2>
-          )}
+        {isSearchMode ? <h2>Search Results...</h2> : <h2>Now Playing</h2>}
         <Search
-          placeholder={'Look for a movie...'}
+          placeholder={"Look for a movie..."}
           clearSearch={clearSearchQuery}
           handleSubmitSearch={updateSearchQuery}
           isSearchMode={isSearchMode}
@@ -55,7 +51,7 @@ const App = () => {
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

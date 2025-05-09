@@ -22,7 +22,6 @@
 .primary {
   background-color: #783690;
   color: white;
-  
 }
 
 .tertiary {
@@ -31,7 +30,7 @@
 }
 
 .tertiary:hover .clear-tooltip {
-  display: flex
+  display: flex;
 }
 
 .clear-tooltip {
