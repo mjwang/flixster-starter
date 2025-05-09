@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SORT_TYPES } from '../utils/sortFns'
+import { SORT_TYPES, sortLabels } from '../utils/sortFns'
 import useSort from '../hooks/useSort'
 import MovieCard from './MovieCard'
 
@@ -32,7 +32,7 @@ export default function MovieList({
           {Object.keys(SORT_TYPES).map((sortType) => {
             return (
               <option key={sortType} value={sortType}>
-                {SORT_TYPES[sortType]}
+                {sortLabels[sortType]}
               </option>
             )
           })}

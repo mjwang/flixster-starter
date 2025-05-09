@@ -1,8 +1,15 @@
 export const SORT_TYPES = {
-  NONE: '---',
-  ALPHABETICAL: 'Title (A-Z)',
-  RATING: 'Rating',
-  RELEASE_DATE: 'Release Date',
+  NONE: 'NONE',
+  ALPHABETICAL: 'ALPHABETICAL',
+  RATING: 'RATING',
+  RELEASE_DATE: 'RELEASE_DATE',
+}
+
+export const sortLabels = {
+  [SORT_TYPES.NONE]: '----',
+  [SORT_TYPES.ALPHABETICAL]: 'Title (A-Z)',
+  [SORT_TYPES.RATING]: 'Rating',
+  [SORT_TYPES.RELEASE_DATE]: 'Release Date',
 }
 
 export const sortFunctions = {
