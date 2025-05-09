@@ -1,28 +1,54 @@
 .App {
+  background-color: white;
+  color: #783690;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
   text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #783690;
+  border-bottom: 1px solid #721694;
+  color: white;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  color: white;
-  padding: 20px;
+  align-items: flex-start;
+  padding: 8px 48px;
+}
+
+.App-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: auto;
+  max-width: 1080px;
+  min-width: 528px;
+  padding: 48px 16px;
+}
+
+footer {
+  box-sizing: border-box;
+  background-color: white;
+  bottom: 0px;
+  height: 48px;
+  position: fixed;
+  padding: 0px 16px;
+  text-align: right;
+  width: 100%;
+}
+
+.footer-content {
+  border-top: 1px solid #721694;
+  color: #783690;
+  font-size: 12px;
+  padding: 8px;
 }
 
 @media (max-width: 600px) {
-  .movie-card {
-    width: 100%;
-  }
-
-  .search-bar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .search-bar form {
-    flex-direction: column;
+  .App-content {
+    padding: 8px;
+    max-width: 100%;
+    min-width: auto;
   }
 }

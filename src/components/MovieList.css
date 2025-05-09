@@ -1,0 +1,25 @@
+.MovieList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.load-more-container {
+  display: flex;
+  margin: 16px auto;
+}
+
+.load-more-button {
+  background-color: #783690;
+  border: 1px solid #721694;
+  border-radius: 16px;
+  color: white;
+  padding: 16px 32px;
+}

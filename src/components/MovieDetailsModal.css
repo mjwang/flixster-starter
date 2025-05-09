@@ -1,0 +1,35 @@
+.MovieDetailsModal {
+  box-sizing: border-box;
+  display: flex;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-close-icon {
+  cursor: pointer;
+  font-size: 32px;
+  position: absolute;
+  right: 1rem;
+  transform: rotate(45deg);
+  top: 0.5rem;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 8px;
+  display: flex;
+  gap: 32px;
+  margin: auto auto; /* 15% from the top and centered */
+  overflow-y: scroll;
+  padding: 32px;
+  position: relative;
+  width: 50%; /* Could be more or less, depending on screen size */
+}

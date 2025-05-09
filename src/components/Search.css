@@ -1,0 +1,13 @@
+.Search {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.search-button {
+  background-color: #783690;
+  border: 1px solid #721694;
+  border-radius: 8px;
+  color: white;
+  padding: 2px 8px;
+}
