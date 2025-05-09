@@ -1,11 +1,7 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from 'react'
 
-import {
-  getGenreName,
-  getMovieRuntime,
-  getPosterUrl,
-} from "../data/tmdbClient";
-import "./MovieDetailsModal.css";
+import { getGenreName, getMovieRuntime, getPosterUrl } from '../data/tmdbClient'
+import './MovieDetailsModal.css'
 
 export default function MovieDetailsModal({
   movieId,
@@ -16,40 +12,37 @@ export default function MovieDetailsModal({
   movieGenres,
   handleClose,
 }) {
-  const [genresString, setGenres] = useState("");
-  const [runtime, setRuntime] = useState(null);
+  const [genresString, setGenres] = useState('')
+  const [runtime, setRuntime] = useState(null)
 
   const backdropImgUrl = useMemo(() => {
     if (movieBackdropUrl) {
-      return getPosterUrl(movieBackdropUrl);
+      return getPosterUrl(movieBackdropUrl)
     } else {
-      return "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg";
+      return 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg'
     }
-  }, [movieBackdropUrl]);
+  }, [movieBackdropUrl])
 
   // Get movie genres
   useEffect(() => {
     Promise.all(
       movieGenres.map(async (genreId) => {
-        const genreName = await getGenreName(genreId);
-        return genreName;
+        const genreName = await getGenreName(genreId)
+        return genreName
       }),
     ).then((data) => {
-      setGenres(data.join(", "));
-    });
-  }, [movieGenres]);
+      setGenres(data.join(', '))
+    })
+  }, [movieGenres])
 
   // Get runtime
   useEffect(() => {
-    getMovieRuntime(movieId).then((runtime) => setRuntime(runtime));
-  }, [movieId]);
+    getMovieRuntime(movieId).then((runtime) => setRuntime(runtime))
+  }, [movieId])
 
   return (
-    <dialog className="MovieDetailsModal">
+    <dialog className="MovieDetailsModal" onClick={handleClose}>
       <div className="modal-content">
-        <div className="modal-close-icon" onClick={handleClose}>
-          +
-        </div>
         <img
           alt={`${movieTitle} backdrop poster`}
           src={backdropImgUrl}
@@ -60,7 +53,7 @@ export default function MovieDetailsModal({
           <header>
             {Boolean(movieReleaseDate) && (
               <span>
-                <strong>Release Date:</strong> {movieReleaseDate} |{" "}
+                <strong>Release Date:</strong> {movieReleaseDate} |{' '}
               </span>
             )}
             {runtime && (
@@ -70,7 +63,7 @@ export default function MovieDetailsModal({
               </span>
             )}
           </header>
-          {genresString !== "" && (
+          {genresString !== '' && (
             <span>
               <strong>Genres:</strong> {genresString}
             </span>
@@ -79,5 +72,5 @@ export default function MovieDetailsModal({
         </div>
       </div>
     </dialog>
-  );
+  )
 }

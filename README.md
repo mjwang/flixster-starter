@@ -4,7 +4,8 @@ Submitted by: **Michelle**
 
 Estimated time spent: **9** hours spent in total
 
-Deployed Application (**required**): [Flixster Deployed Site](https://flixter-8k48.onrender.com/)
+Deployed Application (**required**):
+[Flixster Deployed Site](https://flixter-8k48.onrender.com/)
 
 ### Application Features
 

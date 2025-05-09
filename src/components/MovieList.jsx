@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import { SORT_TYPES } from "../utils/sortFns";
-import useSort from "../hooks/useSort";
-import MovieCard from "./MovieCard";
+import { SORT_TYPES } from '../utils/sortFns'
+import useSort from '../hooks/useSort'
+import MovieCard from './MovieCard'
 
-import "./MovieList.css";
+import './MovieList.css'
 
 export default function MovieList({
   movies,
@@ -12,11 +12,11 @@ export default function MovieList({
   handleClickMovie,
   isAllLoaded,
 }) {
-  const { sortedMovies, setSort } = useSort(movies);
+  const { sortedMovies, setSort } = useSort(movies)
 
   const handleSortChange = (event) => {
-    setSort(event.target.value);
-  };
+    setSort(event.target.value)
+  }
 
   return (
     <section className="MovieList">
@@ -34,7 +34,7 @@ export default function MovieList({
               <option key={sortType} value={sortType}>
                 {SORT_TYPES[sortType]}
               </option>
-            );
+            )
           })}
         </select>
       </div>
@@ -63,5 +63,5 @@ export default function MovieList({
         )}
       </div>
     </section>
-  );
+  )
 }

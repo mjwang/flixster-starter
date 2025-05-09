@@ -65,3 +65,11 @@ footer {
     padding: 16px;
   }
 }
+
+@media (max-width: 450px) {
+  .App-nav {
+    flex-direction: column;
+    height: fit-content;
+    padding: 16px;
+  }
+}

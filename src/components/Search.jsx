@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-import "./Search.css";
+import './Search.css'
 
 export default function Search({
   placeholder,
@@ -8,21 +8,21 @@ export default function Search({
   handleSubmitSearch,
   isSearchMode,
 }) {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('')
 
   const handleSearchChange = (event) => {
-    setValue(event.target.value);
-  };
+    setValue(event.target.value)
+  }
 
   const handleSearchClick = (event) => {
-    event.preventDefault();
-    handleSubmitSearch(value);
-  };
+    event.preventDefault()
+    handleSubmitSearch(value)
+  }
 
   const handleClear = () => {
-    setValue("");
-    clearSearch();
-  };
+    setValue('')
+    clearSearch()
+  }
 
   return (
     <form className="Search" onSubmit={handleSearchClick}>
@@ -51,5 +51,5 @@ export default function Search({
         </button>
       )}
     </form>
-  );
+  )
 }

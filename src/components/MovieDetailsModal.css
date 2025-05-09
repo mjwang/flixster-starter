@@ -56,6 +56,12 @@
     align-items: center;
     flex-direction: column;
     gap: 8px;
-    padding-top: 48px;
+    height: fit-content;
+    padding: 16px 16px 48px 16px;
+    width: 85%;
+  }
+
+  .modal-movie-backdrop {
+    max-width: 250px;
   }
 }
