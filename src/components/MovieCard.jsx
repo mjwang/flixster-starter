@@ -4,6 +4,8 @@ import { getPosterUrl } from '../data/tmdbClient'
 
 import './MovieCard.css'
 
+const MAX_TITLE_LENGTH = 43
+
 export default function MovieCard({
   id,
   title,
@@ -34,11 +36,19 @@ export default function MovieCard({
     }
   }, [poster])
 
+  const truncatedTitle = useMemo(() => {
+    if (title.length > MAX_TITLE_LENGTH) {
+      return title.substring(0, MAX_TITLE_LENGTH) + "..."
+    } else {
+      return title
+    }
+  }, [title])
+
   return (
     <div className="MovieCard" onClick={handleClickMovie}>
-      <img src={posterUrl} className="movie-poster" />
+      <img alt={`${title} poster`} src={posterUrl} className="movie-poster" />
       <div className="movie-details">
-        <span className="movie-title">{title}</span>
+        <span className="movie-title">{truncatedTitle}</span>
         <span className="movie-rating">Rating: {rating}</span>
       </div>
     </div>

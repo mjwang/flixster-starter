@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 import { getGenreName, getMovieRuntime, getPosterUrl } from '../data/tmdbClient'
 import './MovieDetailsModal.css'
@@ -14,6 +14,14 @@ export default function MovieDetailsModal({
 }) {
   const [genresString, setGenres] = useState('')
   const [runtime, setRuntime] = useState(null)
+
+  const backdropImgUrl = useMemo(() => {
+      if (movieBackdropUrl) {
+        return getPosterUrl(movieBackdropUrl)
+      } else {
+        return "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+      }
+    }, [movieBackdropUrl])
 
   // Get movie genres
   useEffect(() => {
@@ -38,14 +46,15 @@ export default function MovieDetailsModal({
         <div className="modal-close-icon" onClick={handleClose}>
           +
         </div>
+        <img alt={`${movieTitle} backdrop poster`} src={backdropImgUrl} className="modal-movie-backdrop" />
         <div className="modal-movie-details">
           <h2>{movieTitle}</h2>
-          <img src={getPosterUrl(movieBackdropUrl)} />
           <header>
-            {movieReleaseDate} | {runtime} min.
+            {Boolean(movieReleaseDate) && <span><strong>Release Date:</strong> {movieReleaseDate} | </span>}  
+            {runtime && (<span><strong>Runtime: </strong>{runtime} min.</span>)}
           </header>
-          <span>Genres: {genresString}</span>
-          <p>{movieOverview}</p>
+          { genresString !== '' && <span><strong>Genres:</strong> {genresString}</span> }
+          <span>{movieOverview}</span>
         </div>
       </div>
     </dialog>
