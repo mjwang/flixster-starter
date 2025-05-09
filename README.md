@@ -73,7 +73,7 @@ Deployed Application (**required**): [Flixster Deployed Site](https://flixter-8k
     - [x] About section
     - [x] Contact section
     - [x] Footer section
-    - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: To ease the grading
+    - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: To ease the grading
           process, please use the
           [color contrast checker](https://webaim.org/resources/contrastchecker/)
           to demonstrate to the grading team that text and background colors on
@@ -81,7 +81,7 @@ Deployed Application (**required**): [Flixster Deployed Site](https://flixter-8k
           above 4.5:1 and should have a green box surrounding it.
   - [x] **Deployment**
   - [x] Website is deployed via Render.
-  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: For ease of grading, please
+  - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: For ease of grading, please
         use the deployed version of your website when creating your walkthrough.
 
 #### STRETCH FEATURES
@@ -128,16 +128,14 @@ Deployed Application (**required**): [Flixster Deployed Site](https://flixter-8k
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below,
-`ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and
-animates when viewing this README. Ensure your walkthrough showcases the
-presence and/or functionality of all features you implemented above (check them
-off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL
-INSTRUCTIONS** checkboxes listed above to ensure graders see the full
-functionality of your website! (🚫 Remove this paragraph after adding
-walkthrough video)
-
-`ADD_EMBEDDED_CODE_HERE`
+<div>
+  <a href="https://www.loom.com/share/d23c79c82abe44988a178ca1f65d4c48">
+    <p>Flixster - 8 May 2025 - Watch Video</p>
+  </a>
+  <a href="https://www.loom.com/share/d23c79c82abe44988a178ca1f65d4c48">
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/d23c79c82abe44988a178ca1f65d4c48-780d93b04b513ac0-full-play.gif">
+  </a>
+</div>
 
 ### Reflection
 
