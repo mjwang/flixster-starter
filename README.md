@@ -2,7 +2,7 @@
 
 Submitted by: **Michelle**
 
-Estimated time spent: **8** hours spent in total
+Estimated time spent: **9** hours spent in total
 
 Deployed Application (**required**): [Flixster Deployed Site](https://flixter-8k48.onrender.com/)
 
@@ -36,14 +36,14 @@ Deployed Application (**required**): [Flixster Deployed Site](https://flixter-8k
   - [x] Users can click the Clear button. When clicked:
     - [x] Most recent search results are cleared from the text input field and
           the grid view and all current movies are displayed in a grid view
-- [ ] **Design Features**
+- [x] **Design Features**
   - [x] Website implements all of the following accessibility features:
     - [x] Semantic HTML
     - [x] [Color contrast](https://webaim.org/resources/contrastchecker/)
     - [x] Alt text for images
   - [x] Website implements responsive web design.
     - [x] Uses CSS Flexbox or CSS Grid
-    - [ ] Movie tiles and images shrink/grow in response to window size
+    - [x] Movie tiles and images shrink/grow in response to window size
   - [x] Users can click on a movie tile to view more details about a movie in a
         pop-up modal.
     - [x] The pop-up window is centered in the screen and does not occupy the
@@ -65,13 +65,13 @@ Deployed Application (**required**): [Flixster Deployed Site](https://flixter-8k
       - [x] Rating (descending, highest to lowest)
     - [x] When a sort option is clicked, movies display in a grid according to
           selected criterion.
-  - [ ] Website displays:
+  - [x] Website displays:
     - [x] Header section
-    - [ ] Banner section
+    - [x] Banner section
     - [x] Search bar
     - [x] Movie grid
-    - [ ] About section
-    - [ ] Contact section
+    - [x] About section
+    - [x] Contact section
     - [x] Footer section
     - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: To ease the grading
           process, please use the

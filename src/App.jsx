@@ -43,11 +43,11 @@ const App = () => {
       )}
       <footer>
         <div className="footer-content">
+          <strong>About: </strong><a href="https://www.codepath.org/" target="_blank">Codepath</a> &#169;2025 <br />
+          <strong>Contact: </strong>
           <a href="https://github.com/mjwang" target="_blank">
             @mjwang
           </a>
-          <br />
-          codepath 2025
         </div>
       </footer>
     </div>

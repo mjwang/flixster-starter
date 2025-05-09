@@ -43,7 +43,7 @@ footer {
   bottom: 0px;
   height: 48px;
   position: fixed;
-  padding: 0px 48px;
+  padding: 4px 48px;
   text-align: right;
   width: 100%;
 }
