@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 
 import { getPosterUrl } from '../data/tmdbClient'
 
@@ -21,17 +21,25 @@ export default function MovieCard({
       movieTitle: title,
       movieGenres: genres,
       movieOverview: overview,
-      movieBackdropUrl: backdrop,
+      movieBackdropUrl: backdrop || poster,
       movieRating: rating,
       movieReleaseDate: releaseDate,
     })
 
+  const posterUrl = useMemo(() => {
+    if (poster) {
+      return getPosterUrl(poster)
+    } else {
+      return "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+    }
+  }, [poster])
+
   return (
     <div className="MovieCard" onClick={handleClickMovie}>
-      <img src={getPosterUrl(poster)} className="movie-poster" />
+      <img src={posterUrl} className="movie-poster" />
       <div className="movie-details">
-        <b>{title}</b>
-        <span>Rating: {rating}</span>
+        <span className="movie-title">{title}</span>
+        <span className="movie-rating">Rating: {rating}</span>
       </div>
     </div>
   )

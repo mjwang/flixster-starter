@@ -21,8 +21,8 @@ export default function MovieList({
   return (
     <section className="MovieList">
       <div className="movie-sort-filter">
-        <label>Sort: </label>
-        <select name="sort" onChange={handleSortChange}>
+        <label><b>Sort:</b></label>
+        <select className="sort-dropdown" name="sort" onChange={handleSortChange}>
           {Object.keys(SORT_TYPES).map((sortType) => {
             return (
               <option key={sortType} value={sortType}>

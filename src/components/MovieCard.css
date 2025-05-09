@@ -1,6 +1,6 @@
 .MovieCard {
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
   border: 1px solid #eaeaea;
   border-radius: 16px;
   box-shadow: 8px 8px 8px #eaeaea;
@@ -8,21 +8,36 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 330px;
+  gap: 8px;
+  justify-content: flex-start;
+  height: 350px;
   overflow: hidden;
   width: 160px;
 }
 
 .movie-poster {
-  height: 250px;
-  width: 160px;
+  border-bottom: 1px solid #e1e1e1;
+  height: 240px;
 }
 
 .movie-details {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-size: 14px;
   gap: 16px;
-  padding: 16px;
+  height: 110px;
+  padding: 8px;
+  width: 100%;
+}
+
+.movie-title {
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.movie-rating {
+  color: black;
+  font-size: 12px;
 }

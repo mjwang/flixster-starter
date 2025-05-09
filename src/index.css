@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -16,4 +16,9 @@ button {
 button:hover {
   background-color: #721694;
   color: white;
+}
+
+h1 {
+  font-size: 56px;
+  margin: 16px 0px;
 }

@@ -1,13 +1,50 @@
 .Search {
   display: flex;
   justify-content: flex-end;
-  gap: 16px;
+  gap: 8px;
+  position: relative;
+}
+
+.search-box {
+  border: 1px solid #721694;
+  border-radius: 4px;
+  padding: 4px;
 }
 
 .search-button {
+  border: 2px solid #721694;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 32px;
+  padding: 2px 8px;
+}
+
+.primary {
   background-color: #783690;
-  border: 1px solid #721694;
+  color: white;
+  
+}
+
+.tertiary {
+  background-color: white;
+  color: #783690;
+}
+
+.tertiary:hover .clear-tooltip {
+  display: flex
+}
+
+.clear-tooltip {
+  background: rgb(0, 0, 0, 0.7);
   border-radius: 8px;
   color: white;
-  padding: 2px 8px;
+  display: none;
+  flex-direction: column;
+  font-size: 12px;
+  height: fit-content;
+  padding: 8px;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  width: 150px;
 }

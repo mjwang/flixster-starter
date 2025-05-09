@@ -19,23 +19,22 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>🍿 Flixter</h2>
+        <h1>🍿 Flixter</h1>
       </header>
-      <main className="App-content">
+      <nav className="App-nav">
         {isSearchMode ? (
-          <>
-            <h3>Search Results...</h3>
-            <button role="link" onClick={clearSearchQuery}>
-              Back to Now Playing
-            </button>
-          </>
-        ) : (
-          <h3>Now Playing</h3>
-        )}
+            <h2>Search Results...</h2>
+          ) : (
+            <h2>Now Playing</h2>
+          )}
         <Search
           placeholder={'Look for a movie...'}
+          clearSearch={clearSearchQuery}
           handleSubmitSearch={updateSearchQuery}
+          isSearchMode={isSearchMode}
         />
+      </nav>
+      <main className="App-content">
         <MovieList
           movies={movies}
           handleLoadMoreMovies={loadMoreMovies}
